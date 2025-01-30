@@ -1,8 +1,7 @@
-.SwitchRegister{
+.SwitchLogin{
     height: 100%;
     width: 30%; 
-    background-color: red;
-    background: url('https://static.vecteezy.com/system/resources/previews/004/447/761/original/abstract-red-fluid-wave-background-free-vector.jpg');
+    background-color: white;
     background-size: cover;
     border-top-right-radius: 1em;
     border-bottom-right-radius: 1em;
@@ -10,19 +9,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
     transition: 800ms;
-    transform: translateY(-100%);
-
+    transform: translateY(100%);
 }
-
-.SwitchRegister button{
+.SwitchLogin h1{
+    text-align: center;
+    font-size: 2.2rem;
+    color: black;
+    margin: 0;
+    margin-bottom: 3vh;
+}
+.SwitchLogin h4{
+    color: #333333;
+}
+.SwitchLogin button{
     width: 30%;
     height: 5%;
-    background-color: white;
+    background-color: red;
     border: none;
     border-radius: 1em;
-    color: black;
+    color: white;
     font-size: 1rem;
     cursor: pointer;
 }

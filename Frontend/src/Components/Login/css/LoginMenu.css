@@ -1,8 +1,9 @@
 .LoginMenu{
     height: 80%;
-    width: 80%;
-    background-color: blue;
+    width: 75%;
     border-radius: 1em;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
