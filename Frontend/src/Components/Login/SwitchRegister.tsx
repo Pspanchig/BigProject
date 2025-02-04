@@ -23,9 +23,11 @@ const SwitchRegister: React.FC<SwitchRegisterProps> = ({LoginForm, Switch}) => {
       LoginForm.current!.style.transform = 'translatey(0%)';
     }, 50);
   }
+
   useEffect(() => {
     start();
   },[])
+  
   return (
     <section ref={container} className='SwitchRegister'>
         <h1>New here?</h1>

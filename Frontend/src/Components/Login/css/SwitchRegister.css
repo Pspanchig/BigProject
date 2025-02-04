@@ -13,7 +13,12 @@
     color: white;
     transition: 800ms;
     transform: translateY(-100%);
+}
 
+.SwitchRegister h1{
+    text-align: center;
+    font-size: 2.2rem; 
+    margin: 0;
 }
 
 .SwitchRegister button{

@@ -17,11 +17,11 @@
     text-align: center;
     font-size: 2.2rem;
     color: black;
-    margin: 0;
-    margin-bottom: 3vh;
+    margin: 0;    
 }
 .SwitchLogin h4{
     color: #333333;
+    margin-inline: 3vh;
 }
 .SwitchLogin button{
     width: 30%;

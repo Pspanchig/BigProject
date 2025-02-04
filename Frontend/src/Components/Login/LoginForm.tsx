@@ -21,12 +21,14 @@ const LoginForm = forwardRef<HTMLDivElement, {}>((props, ref) => {
           <p>or</p>
           <div className='Line'></div>
         </div>
-        <form>
+        <article className='LForm'>          
           <input type='text' placeholder='Email' />
           <input type='password' placeholder='Password' />
-          <button type='submit'>Login!</button>          
+          <button style={{cursor: 'pointer'}} onClick={() => navigate('/application')} type='submit'>Login!</button>          
           <p style={{cursor: 'pointer'}} onClick={() => navigate('/')}>Go back to menu</p>
-        </form>
+        </article>
+        
+        
     </section>
     );
   });

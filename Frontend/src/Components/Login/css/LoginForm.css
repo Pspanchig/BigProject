@@ -36,7 +36,7 @@
     height: 0.1rem;
     background-color: rgb(128, 128, 128);
 }
-.LoginForm form{
+.LForm{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -44,13 +44,18 @@
     height: 50%;
     width: 70%;
 }
-.LoginForm form input{
+.LForm input{
     width: 50%;
     border: 1px solid gray;
     border-radius: 1em;
     height: 15%;
 }
-.LoginForm form button{
+.LForm input::placeholder{
+    width: 100%;
+    margin-left: 1em;
+    
+}
+.LForm button{
     width: 30%;
     height: 12%;
     margin-top: 2vh;

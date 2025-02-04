@@ -9,6 +9,7 @@ const LoginMenu: React.FC = () => {
   const login = useRef<HTMLDivElement>(null);
   const register = useRef<HTMLDivElement>(null);
   const [showRegister, setShowRegister] = useState(false);
+  const [createUserUrl] = useState<string>('https://localhost:7293/identity/register')
 
   return (
     <section className='LoginMenu'>
@@ -23,7 +24,7 @@ const LoginMenu: React.FC = () => {
       {
         showRegister === true &&(
           <>
-            <RegisterForm ref={register}/>
+            <RegisterForm ref={register} url={createUserUrl}/>
             <SwitchLogin LoginForm={register} Switch={setShowRegister}/>
           </>
         )
