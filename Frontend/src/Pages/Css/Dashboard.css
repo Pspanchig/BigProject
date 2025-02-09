@@ -1,7 +1,10 @@
 .Dashboard{
-    height: 150vh;
+    height: 170vh;
     width: auto;
     max-width: 100vw;
+    background-color: #D7D7D7;
+}
+html{
     background-color: #D7D7D7;
 }
 .Dashboard h1{

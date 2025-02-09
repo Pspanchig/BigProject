@@ -4,15 +4,24 @@ import facebook from './img/Facebook.svg'
 import instagram from './img/instagram.svg'
 import gmail from './img/gmail.svg'
 import { useNavigate } from 'react-router-dom';
-import { forwardRef, useState } from 'react';
+import { forwardRef, useRef, useState } from 'react';
 
-export interface User{
-  username: string;
-  email: string;
-  password: string
-}
 export interface Url{
   url: string;
+}
+export interface UserInformaion{
+  id?: string;
+  username: string;
+  password: string;
+  email: string;
+  nickname: string | null;
+  address: string | null;
+  phone: string | null;
+  position: string;
+  birthday: Date | null;
+  information: string | null;
+  securityCode: string | null;
+  loggedIn: boolean;
 }
 const RegisterForm = forwardRef<HTMLDivElement, Url>((props, ref) => {
 
@@ -21,15 +30,18 @@ const RegisterForm = forwardRef<HTMLDivElement, Url>((props, ref) => {
   const [email, setEmail] = useState<string>('')
   const [password, setPassword] = useState<string>('')
   const [r_password, setR_password] = useState<string>('')
+  const [admin, setAdmin] = useState<string>('user');
 
-  async function SendUserDB(): Promise<void>{
+  const isAdmin = useRef<HTMLInputElement>(null);
+
+  async function SendUsernDB(): Promise<void>{
     try{
       const response = await fetch(props.url,{
         method: 'Post',
         headers: {
           'Content-Type': 'application/json',
         }, 
-        body: JSON.stringify(CreateUser())
+        body: JSON.stringify(CreateUserInformation())
       });
   
       if(response.ok) console.log('Evertying worked OK')
@@ -39,12 +51,19 @@ const RegisterForm = forwardRef<HTMLDivElement, Url>((props, ref) => {
     }
   }
 
-  
-  function CreateUser(): User{
-    return {
+  function CreateUserInformation(): UserInformaion{
+    return{
       username: username,
+      password: password,
       email: email,
-      password: password
+      nickname: null,
+      address: null,
+      phone: null,
+      position: admin,
+      birthday: null,
+      information: null,
+      securityCode: null,
+      loggedIn: false
     }
   }
 
@@ -69,15 +88,15 @@ const RegisterForm = forwardRef<HTMLDivElement, Url>((props, ref) => {
           <input type='text' placeholder='username' value={username} onChange={(e) => setUsername(e.target.value)}/>
           <input type='text' placeholder='Email'value={email} onChange={(e) => setEmail(e.target.value)} />
           <input type='password' placeholder='Password' value={password} onChange={(e) =>setPassword(e.target.value)}/>
-          <input type='password' placeholder='Password' value={r_password} onChange={(e) => setR_password(e.target.value)}/>
+          <input type='password' placeholder='Repeat password' value={r_password} onChange={(e) => setR_password(e.target.value)}/>
           <div className='AdminInput'>
             <div className="checkbox-apple">
-                <input className="yep" id="check-apple" type="checkbox" />
+                <input className="yep" ref={isAdmin} onClick={() => setAdmin(isAdmin.current?.checked ? "admin" : "user")} id="check-apple" type="checkbox" />
                 <label htmlFor="check-apple" /> 
             </div>
             <input type="text" style={{height:'35%'}} placeholder='Are you an admin?'/>
           </div>
-          <button style={{cursor: 'pointer'}} onClick={SendUserDB} type='submit'>Login!</button>          
+          <button style={{cursor: 'pointer'}} onClick={()=>{SendUsernDB()}} type='submit'>Create account!</button>          
           <p style={{cursor: 'pointer'}} onClick={() => navigate('/')}>Go back to menu</p>
         </article>        
     </section>

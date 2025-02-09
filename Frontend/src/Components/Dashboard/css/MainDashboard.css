@@ -29,6 +29,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+    font-size: 2rem;
 }
 .SectionsDashboard{
     position: relative;
@@ -40,8 +41,14 @@
 .NewsInformation{
     width: 70%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .TasksInformation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30%;
     height: 100%;
 }
