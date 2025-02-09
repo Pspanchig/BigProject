@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pspan\\Desktop\\Programming\\BigProject\\Backend\\Backend\\Backend.csproj": {}
+    "C:\\Users\\pspan\\Desktop\\Programming\\BigProject\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pspan\\Desktop\\Programming\\BigProject\\Backend\\Backend\\Backend.csproj": {
+    "C:\\Users\\pspan\\Desktop\\Programming\\BigProject\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pspan\\Desktop\\Programming\\BigProject\\Backend\\Backend\\Backend.csproj",
+        "projectUniqueName": "C:\\Users\\pspan\\Desktop\\Programming\\BigProject\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "C:\\Users\\pspan\\Desktop\\Programming\\BigProject\\Backend\\Backend\\Backend.csproj",
+        "projectPath": "C:\\Users\\pspan\\Desktop\\Programming\\BigProject\\Backend\\Backend.csproj",
         "packagesPath": "C:\\Users\\pspan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pspan\\Desktop\\Programming\\BigProject\\Backend\\Backend\\obj\\",
+        "outputPath": "C:\\Users\\pspan\\Desktop\\Programming\\BigProject\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -47,17 +47,9 @@
         "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.1, )"
-            },
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.1, )"
@@ -70,7 +62,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[7.2.0, )"
+              "version": "[6.6.2, )"
             }
           },
           "imports": [

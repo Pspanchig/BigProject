@@ -1,15 +1,13 @@
-﻿using Backend.Entities;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Backend.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Backend.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDBContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions options) : base(options)
+        public ApplicationDBContext(DbContextOptions options) : base(options)
         {
         }
-
-        DbSet<UserInformation> UserInformation {  get; set; }
+        public DbSet<UserInformation> UserInformation { get; set; }
     }
 }
