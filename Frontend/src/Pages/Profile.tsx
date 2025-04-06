@@ -1,15 +1,13 @@
 import React from 'react';
 import './Css/Profile.css'
 import NavBar from '../Shared/NavBar';
-import BasicInformation from '../Components/Profile/BasicInformation';
-import AllInformation from '../Components/Profile/AllInformation';
+import ProfileMenu from '../Components/Profile/ProfileMenu';
 
 const Profile: React.FC = () => {
   return (
-    <main className='Profile'>
-         <NavBar/>
-         <BasicInformation/>
-         <AllInformation/>
+    <main className='Profile' >
+        <NavBar/>         
+        <ProfileMenu/>
     </main>
   );
 }

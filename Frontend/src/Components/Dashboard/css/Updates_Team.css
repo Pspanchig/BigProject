@@ -11,10 +11,65 @@
     width: 90%;
     background-color: #E8E8E8;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     border: 1px solid #797979;
     border-radius: 0.25em;
+}
+.RecentUpdates{
+    height: 82%;
+    width: 90%;
+    overflow: auto;    
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.UpdatesItemContainer{
+    width: 100%;
+    min-height: 25%;
+    height: 100;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.ItemsUpdates{
+    width: 80%;
+    margin-block: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.UpdatesItemContainer h2{
+    color: black;
+}
+.UpdatesItemContainer p, .UpdatesItemContainer h2{
+    margin-block: 1vh;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.UpdatesItemContainer button{
+    height: 45%;
+    border: 1px solid gray;
+    border-radius: 1em;
+    background-color: white;
+    color: black;
+    width: 15%;
+    cursor: pointer;
+    max-height: 5em;
+}
+.RecentUpdates ul{
+    padding: 0;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 .RecentUpdatesHeader{
     margin-block: 1vh;
@@ -93,6 +148,10 @@
     align-items: center;
     justify-content: space-evenly;
     width: 50%;
+}
+.MemeberContainer p{
+    width: 80%;
+    overflow: auto;
 }
 .Member img{
     width: 19%;

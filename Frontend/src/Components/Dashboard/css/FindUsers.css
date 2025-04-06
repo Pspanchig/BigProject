@@ -35,13 +35,14 @@
     justify-content: center;
 }
 .FindUsersHeader img{
-    width: 2em;
+    width: 2.5em;
     cursor: pointer;
 }
 .SearchbarFriends{    
     width: 90%;
     display: flex;
     align-items: center;    
+    
 }
 .User_Friends{
     width: 100%;
@@ -59,7 +60,7 @@
     width: 18%;
     max-width: 18%;
     border-radius: 1em;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,6 +80,17 @@
     margin-top: 3vh;
     background: linear-gradient(to bottom, #D9001B, #910012);
 }
+.UserItem h1{
+    text-align: center;
+}
 .UserItem p{
     text-align: center;
+}
+.FindPeopleInput{
+    margin-inline: 0.5em;
+    border: 2px solid black;
+    border-radius: 0.5em ;
+    height: 2em;
+    width: 15%;
+    
 }
